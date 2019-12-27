@@ -6,7 +6,8 @@ import six.moves.urllib.request
 import json
 import datetime
 
-import_url = "https://raw.githubusercontent.com/Palakis/obs-websocket/master/docs/generated/comments.json"
+import_url = "https://raw.githubusercontent.com/Palakis/obs-websocket/4.x-current/docs/generated/comments.json"
+
 
 def toPyVar(string):
     """Converts a string to a suitable variable name by removing not allowed characters."""
@@ -92,6 +93,7 @@ def generate_classes():
                     file.write("\n")
                     
     print("API classes have been generated.")
+
 
 if __name__ == "__main__":
     generate_classes()
